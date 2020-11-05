@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 页面背景颜色 */
+/*文字颜色*/
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background-color: #ffffff;
+}
+.container .content {
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-bottom: 200rpx;
+  overflow-y: auto;
+}
+.container .content .uni-textarea textarea {
+  background-color: #ffffff;
+}
+.container .content .uni-textarea text {
+  float: right;
+  color: #B2B2B2;
+}
+.container .content .uni-list {
+  background-color: #ffffff;
+}
+.container .content .uni-list .uni-uploader__file {
+  width: 205rpx;
+  height: 205rpx;
+}
+.container .content .uni-list::before {
+  height: 0px;
+}
+.container .content .uni-list::after {
+  height: 0px;
+}
+.container .content .uni-uploader__input-box {
+  background-color: #F2F2F2;
+  border: 0px;
+}
+.container .content .uni-uploader__input-box:before, .container .content .uni-uploader__input-box:after {
+  background-color: #ABABAB;
+}
+.container .content .uni-uploader__input-box:before {
+  width: 2px;
+  height: 37px;
+}
+.container .content .uni-uploader__input-box:after {
+  width: 37px;
+  height: 2px;
+}
+.container .content .uni-input {
+  background: #ffffff;
+}
+.container .content .shipping {
+  position: relative;
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 20rpx;
+  background-color: #F2F2F2;
+  border-radius: 10rpx;
+}
+.container .content .shipping .shipping-icon {
+  font-size: 28rpx;
+  color: #6F7FA0;
+  margin-left: 20rpx;
+}
+.container .content .shipping .shipping-val {
+  font-size: 28rpx;
+  color: #8B8B8B;
+  margin-right: 20rpx;
+  margin-left: 18rpx;
+}
+.container .content .tip {
+  font-size: 16px;
+  margin-top: 9px;
+}
+.container .content .item {
+  border-top: 1px solid #EDEDED;
+}
+.container .content .item .uni-input {
+  text-align: right;
+  height: 33px;
+  line-height: 33px;
+}
+.container .content .detail {
+  position: relative;
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.container .content .detail .detail-icon {
+  color: #6A7998;
+  font-size: 33rpx;
+}
+.container .content .detail .detail-val {
+  margin-left: 10rpx;
+  color: #6A7998;
+  font-size: 30rpx;
+}
+.container .content .goods-info {
+  width: 94%;
+  margin: 0 auto;
+}
+.container .content .goods-info textarea {
+  background-color: #ffffff;
+  width: 100%;
+}
+.container .content .goods-info text {
+  float: right;
+  color: #B2B2B2;
+}
+.container .content .detail-img {
+  width: 94%;
+  text-align: center;
+  margin: 0 auto;
+}
+.container .content .add-img {
+  width: 94%;
+  height: 250rpx;
+  background-color: #F7F7F7;
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: center;
+  margin-top: 20rpx;
+}
+.container .content .add-img .add-icon {
+  color: #B9B9B9;
+}
+.container .footer {
+  border-top: 1px solid #EDEDED;
+  width: 750rpx;
+  position: fixed;
+  bottom: 0;
+  height: 150rpx;
+  z-index: 10;
+  background-color: #ffffff;
+}
+.container .footer .btn {
+  padding-top: 30rpx;
+  margin-right: 40rpx;
+  text-align: right;
+}
+.container .footer .btn button {
+  width: 180rpx;
+  font-size: 30rpx;
+}
+.container .footer .btn button:after {
+  border: none;
+}
+.container .footer .btn button:active {
+  opacity: 0.5;
+}
+.container .footer .btn .cancel {
+  display: inline-block;
+  margin-right: 20rpx;
+  color: #FF6146;
+  background: #F2F2F2;
+}
+.container .footer .btn .submit {
+  display: inline-block;
+  margin-left: 20rpx;
+  background: #FF6146;
+  color: #ffffff;
+}
+.container .popup-content {
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 800rpx;
+  position: relative;
+}
+.container .popup-content .popup-title {
+  padding-top: 40rpx;
+  padding-left: 30rpx;
+}
+.container .popup-content .popup-title text {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.container .popup-content .popup-nav {
+  padding-top: 40rpx;
+  height: 250px;
+  overflow: auto;
+}
+.container .popup-content .popup-nav .line {
+  width: 750rpx;
+  height: 0;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 10rpx;
+}
+.container .popup-content .popup-nav .item {
+  padding-left: 30rpx;
+}
+.container .popup-content .popup-nav .item .icon {
+  font-size: 50rpx;
+}
+.container .popup-content .popup-nav .item text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.container .popup-content .popup-nav .item .item-content {
+  display: inline-block;
+  margin-left: 0rpx;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+}
+.container .popup-content .popup-nav .item .item-content .item-title {
+  font-size: 30rpx;
+  color: #1B1B1B;
+}
+.container .popup-content .popup-nav .selected {
+  float: right;
+  margin-top: -88rpx;
+  margin-right: 30rpx;
+}
+.container .popup-content .popup-btn {
+  padding-top: 40rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .popup-content .popup-btn button {
+  width: 180rpx;
+  font-size: 30rpx;
+}
+.container .popup-content .popup-btn button:after {
+  border: none;
+}
+.container .popup-content .popup-btn button:active {
+  opacity: 0.5;
+}
+.container .popup-content .popup-btn .cancel {
+  display: inline-block;
+  margin-right: 20rpx;
+  color: #FF6146;
+  background: #F2F2F2;
+}
+.container .popup-content .popup-btn .submit {
+  display: inline-block;
+  margin-left: 20rpx;
+  background: #FF6146;
+  color: #ffffff;
+}
+

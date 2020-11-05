@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-section": "/components/uni-ui/uni-section/uni-section",
+    "zx-page-list": "/components/zx-diy/zx-page-list/zx-page-list",
+    "zx-icon": "/components/zx-diy/zx-icon/zx-icon"
+  }
+}

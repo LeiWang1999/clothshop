@@ -1,0 +1,63 @@
+
+.icon{
+	font-size: 25px;
+	font-family: iconfont;
+	color: #666666;
+}
+.title{
+	text-align: center;
+	margin-top: 10rpx;
+}
+.uni-flex{
+	margin-top: 10rpx;
+}
+.v-to-select-page{
+	margin-top: 10rpx;
+}
+.t-to-select-page{
+	color: #38f;
+}
+.button-text{
+	color:#ff4444;
+}
+.i-tabbar-icons{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		background-size: 240px 210px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+}
+.i-tabbar-icons-selected{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		background-size: 240px 210px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+}
+

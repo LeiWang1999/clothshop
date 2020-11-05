@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "拼团编辑",
+  "usingComponents": {
+    "zx-date-picker": "/components/zx-ui/zx-date-picker/zx-date-picker"
+  }
+}

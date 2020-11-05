@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 页面背景颜色 */
+/*文字颜色*/
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.container .header {
+  background: -webkit-linear-gradient(top, #ff816b, #ff6348);
+  background: linear-gradient(to bottom, #ff816b, #ff6348);
+  height: 400rpx;
+}
+.container .header .shop-info {
+  position: absolute;
+  height: 80rpx;
+  margin-top: 200rpx;
+  z-index: 100;
+}
+.container .header .shop-info .shop-info_img {
+  margin-left: 50rpx;
+}
+.container .header .shop-info .shop-info_txt {
+  margin-left: 20rpx;
+}
+.container .header .shop-info .shop-info_txt .shop-info_name {
+  font-size: 30rpx;
+  color: #FFFFFF;
+}
+.container .header .shop-info .shop-info_txt .shop-info_come {
+  font-size: 25rpx;
+  color: #FFCEC2;
+}
+.container .header .shop-info .shop-info_share {
+  position: absolute;
+  margin-left: 500rpx;
+  margin-top: 15rpx;
+}
+.container .header .shop-info .shop-info_share .shop-info_qrcode {
+  background-color: #FF7963;
+  width: 200rpx;
+  height: 60rpx;
+  border-radius: 12rpx;
+  text-align: center;
+  padding-top: 10rpx;
+}
+.container .header .shop-info .shop-info_share .shop-info_qrcode text {
+  color: #ffffff;
+  font-size: 28rpx;
+}
+.container .content {
+  height: 250rpx;
+  width: 700rpx;
+  background: #ffffff;
+  border-radius: 12rpx;
+  margin: 0 auto;
+  margin-top: -50rpx;
+}
+.container .content .title {
+  position: absolute;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+}
+.container .content .data {
+  position: absolute;
+  margin-top: 100rpx;
+  margin-left: 20rpx;
+}
+.container .content .data .item {
+  width: 220rpx;
+  text-align: center;
+}
+.container .content .data .item .value {
+  font-size: 40rpx;
+}
+.container .content .data .item .add {
+  color: #FF6146;
+}
+.container .content .data .item .key {
+  font-size: 25rpx;
+  color: #7E7E7E;
+}
+.container .space {
+  margin-top: 30rpx;
+}
+

@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/diy",
+    "pages/menu/menu",
+    "pages/account/account",
+    "pages/public/login",
+    "pages/public/password-edit",
+    "pages/shop/page-list",
+    "pages/shop/page-edit",
+    "pages/shop/page-diy",
+    "pages/shop/source-list",
+    "pages/shop/tabbar-edit",
+    "pages/template/template-list",
+    "pages/template/template-edit",
+    "pages/goods/goods-list",
+    "pages/goods/goods-edit",
+    "pages/goods/sku-edit",
+    "pages/goods/goods-detail-edit",
+    "pages/goods/goods-group-list",
+    "pages/goods/goods-group-edit",
+    "pages/delivery/template-list",
+    "pages/delivery/selfget-list",
+    "pages/delivery/template-edit",
+    "pages/delivery/selfget-edit",
+    "pages/setting/setting-edit",
+    "pages/coupon/coupon-list",
+    "pages/coupon/coupon-edit",
+    "pages/user/user-list",
+    "pages/user/point-edit",
+    "pages/order/order-list",
+    "pages/pintuan/pintuan-list",
+    "pages/pintuan/pintuan-edit"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#191919",
+    "selectedColor": "#FF6146",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/home-fill.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "iconPath": "static/img/all.png",
+        "selectedIconPath": "static/img/all-fill.png",
+        "text": "功能"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "iconPath": "static/img/account.png",
+        "selectedIconPath": "static/img/account-fill.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

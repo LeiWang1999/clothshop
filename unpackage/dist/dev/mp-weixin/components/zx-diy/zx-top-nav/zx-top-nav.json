@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-popup": "/components/uni-ui/uni-popup/uni-popup",
+    "uni-tag": "/components/uni-ui/uni-tag/uni-tag",
+    "media-item": "/components/zx-diy/zx-top-nav/news-item",
+    "zx-index": "/components/zx-diy/zx-index/zx-index",
+    "t-color-picker": "/components/zx-ui/zx-color-picker/zx-color-picker",
+    "zx-page-list": "/components/zx-diy/zx-page-list/zx-page-list"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "页面标题",
+  "usingComponents": {
+    "t-color-picker": "/components/zx-ui/zx-color-picker/zx-color-picker",
+    "uni-tag": "/components/uni-ui/uni-tag/uni-tag"
+  }
+}

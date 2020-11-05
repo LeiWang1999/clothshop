@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "客户列表",
+  "usingComponents": {
+    "uni-load-more": "/components/zx-ui/zx-load-more/zx-load-more",
+    "empty": "/components/zx-ui/zx-empty/zx-empty",
+    "uni-search-bar": "/components/uni-ui/uni-search-bar/uni-search-bar",
+    "uni-drawer": "/components/uni-ui/uni-drawer/uni-drawer",
+    "uni-section": "/components/uni-ui/uni-section/uni-section"
+  }
+}

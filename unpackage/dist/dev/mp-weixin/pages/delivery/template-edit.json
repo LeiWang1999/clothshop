@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "快递模板编辑",
+  "usingComponents": {
+    "uni-tag": "/components/uni-ui/uni-tag/uni-tag",
+    "tki-tree": "/components/zx-ui/zx-tree/zx-tree"
+  }
+}

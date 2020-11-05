@@ -1,0 +1,21 @@
+{
+  "navigationBarTitleText": "预览",
+  "usingComponents": {
+    "zx-text": "/components/zx-diy/zx-text/zx-text",
+    "zx-image": "/components/zx-diy/zx-image/zx-image",
+    "zx-fab": "/components/zx-diy/zx-fab/zx-fab",
+    "zx-product": "/components/zx-diy/zx-product/zx-product",
+    "zx-product-group": "/components/zx-diy/zx-product-group/zx-product-group",
+    "zx-image-text-nav": "/components/zx-diy/zx-image-text-nav/zx-image-text-nav",
+    "zx-blank": "/components/zx-diy/zx-blank/zx-blank",
+    "zx-line": "/components/zx-diy/zx-line/zx-line",
+    "zx-search": "/components/zx-diy/zx-search/zx-search",
+    "zx-title": "/components/zx-diy/zx-title/zx-title",
+    "zx-notice": "/components/zx-diy/zx-notice/zx-notice",
+    "zx-video": "/components/zx-diy/zx-video/zx-video",
+    "zx-free-panel": "/components/zx-diy/zx-free-panel/zx-free-panel",
+    "zx-top-nav": "/components/zx-diy/zx-top-nav/zx-top-nav",
+    "zx-classify-tem": "/components/zx-diy/zx-classify-tem/zx-classify-tem",
+    "zx-coupon": "/components/zx-diy/zx-coupon/zx-coupon"
+  }
+}

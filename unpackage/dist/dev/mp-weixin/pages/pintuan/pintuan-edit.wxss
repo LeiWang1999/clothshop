@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 页面背景颜色 */
+/*文字颜色*/
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.container .panel {
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  margin: 0 30rpx;
+  margin-bottom: 30rpx;
+  padding: 10rpx;
+  position: relative;
+}
+.container .panel .title {
+  width: 150rpx;
+}
+.container .panel .item {
+  right: 40rpx;
+  padding: 13rpx 26rpx;
+  color: #7E7E7E;
+  font-size: 28rpx;
+  border: 0px;
+}
+.container .panel .item-icon {
+  position: absolute;
+  right: 20rpx;
+  margin-top: 0rpx;
+  color: #7E7E7E;
+  font-size: 39rpx;
+}
+.container .panel .item-date-picker {
+  margin-top: -4rpx;
+}
+.container .panel .value {
+  position: relative;
+  float: right;
+  padding: 10rpx 26rpx;
+}
+.container .panel .line {
+  height: 1px;
+  background-color: #f8f8f8;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.container .panel .item-goods .goods-info .goods-img {
+  width: 150rpx;
+  height: 150rpx;
+}
+.container .panel .item-goods .goods-info .goods-txt {
+  display: inline-block;
+  position: relative;
+}
+.container .panel .item-goods .goods-info .goods-txt .txt-a {
+  margin-top: 0rpx;
+}
+.container .panel .item-goods .goods-info .goods-txt .txt-a .a-name {
+  color: #6E6E6E;
+}
+.container .panel .item-goods .goods-info .goods-txt .txt-a .a-sku {
+  color: #606060;
+}
+.container .panel .item-goods .goods-info .goods-txt .txt-b {
+  margin-top: 0rpx;
+}
+.container .panel .item-goods .goods-info .goods-txt .txt-b .b-price {
+  color: #323232;
+}
+.container .panel .item-goods .goods-info .goods-txt .txt-b .b-store {
+  margin-left: 10rpx;
+  color: #A0A0A0;
+}
+.container .panel .sku-info {
+  height: auto;
+  max-height: 360rpx;
+  overflow-y: auto;
+}
+.container .footer {
+  position: absolute;
+  background-color: #ffffff;
+  height: 150rpx;
+  width: 750rpx;
+  bottom: 0px;
+}
+.container .footer .btn {
+  padding-top: 30rpx;
+  margin-right: 40rpx;
+  text-align: right;
+}
+.container .footer .btn button {
+  width: 180rpx;
+  font-size: 30rpx;
+}
+.container .footer .btn button:after {
+  border: none;
+}
+.container .footer .btn button:active {
+  opacity: 0.5;
+}
+.container .footer .btn .cancel {
+  display: inline-block;
+  margin-right: 20rpx;
+  color: #FF6146;
+  background: #F2F2F2;
+}
+.container .footer .btn .submit {
+  display: inline-block;
+  margin-left: 20rpx;
+  background: #FF6146;
+  color: #ffffff;
+}
+

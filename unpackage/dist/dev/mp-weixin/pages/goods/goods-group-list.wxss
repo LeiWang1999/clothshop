@@ -1,0 +1,26 @@
+
+.cont {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 15px;
+	position: relative;
+	background-color: #fff;
+	font-size: 15px;
+	border-bottom-color: #F5F5F5;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.button {
+	border-color: #e5e5e5;
+	border-style: solid;
+	border-width: 1px;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+.button-text {
+	font-size: 15px;
+}
+

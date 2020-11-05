@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-drawer": "/components/uni-ui/uni-drawer/uni-drawer",
+    "uni-section": "/components/uni-ui/uni-section/uni-section",
+    "uni-swipe-action": "/components/uni-ui/uni-swipe-action/uni-swipe-action",
+    "uni-swipe-action-item": "/components/uni-ui/uni-swipe-action-item/uni-swipe-action-item"
+  }
+}

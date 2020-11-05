@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 页面背景颜色 */
+/*文字颜色*/
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background-color: #F2F2F2;
+}
+.item {
+  margin-bottom: 200rpx;
+}
+.item .uni-input {
+  height: 25px;
+}
+.container .footer {
+  border-top: 1px solid #EDEDED;
+  width: 750rpx;
+  position: fixed;
+  bottom: 0;
+  height: 150rpx;
+  z-index: 10;
+  background-color: #ffffff;
+}
+.container .footer .btn {
+  padding-top: 30rpx;
+  margin-right: 40rpx;
+  text-align: right;
+}
+.container .footer .btn button {
+  width: 180rpx;
+  font-size: 30rpx;
+}
+.container .footer .btn button:after {
+  border: none;
+}
+.container .footer .btn button:active {
+  opacity: 0.5;
+}
+.container .footer .btn .cancel {
+  display: inline-block;
+  margin-right: 20rpx;
+  color: #FF6146;
+  background: #F2F2F2;
+}
+.container .footer .btn .submit {
+  display: inline-block;
+  margin-left: 20rpx;
+  background: #FF6146;
+  color: #ffffff;
+}
+

@@ -1,0 +1,20 @@
+
+page {
+	background-color: #F4F5F6;
+	height: 100%;
+	font-size: 28rpx;
+	line-height: 1.8;
+}
+.t-fill {
+	color: #FF0000;
+	position: absolute;
+	left: 10rpx;
+}
+.uni-input {
+	height: auto;
+}
+.uni-form-item .title {
+	padding-left: 0px;
+	margin-left: 30rpx;
+}
+

@@ -1,0 +1,18 @@
+
+.title{
+	width: 120rpx;
+	padding: 10rpx 10rpx;
+}
+.right-content{
+	position: absolute;
+	margin-left: 180rpx;
+}
+.uni-column{
+	margin-top: 10px;
+}
+.t-tip{
+	position: absolute;
+	margin-left: 550rpx;
+	margin-top: 6px;
+}
+

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 页面背景颜色 */
+/*文字颜色*/
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.zx-blank {
+  position: relative;
+  background-color: #FFFFFF;
+}
+.zx-blank .zx-blank__preview-controller {
+  position: relative;
+  min-height: 10px;
+  border: 1px dashed #38f;
+}
+.zx-blank .zx-blank__preview {
+  position: relative;
+  min-height: 10px;
+}
+.zx-blank .v-action {
+  position: relative;
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.zx-blank .tag-view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin: 10rpx 10rpx;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.zx-blank .popup-content {
+  display: block;
+  background-color: #F4F5F6;
+  padding-right: 10px;
+  font-size: 14px;
+}
+.zx-blank .uni-row {
+  margin-top: 20rpx;
+}
+

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-popup": "/components/uni-ui/uni-popup/uni-popup",
+    "uni-tag": "/components/uni-ui/uni-tag/uni-tag",
+    "uni-notice-bar": "/components/uni-ui/uni-notice-bar/uni-notice-bar",
+    "t-color-picker": "/components/zx-ui/zx-color-picker/zx-color-picker"
+  }
+}

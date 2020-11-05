@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "拼团列表",
+  "usingComponents": {
+    "uni-load-more": "/components/zx-ui/zx-load-more/zx-load-more",
+    "uni-search-bar": "/components/uni-ui/uni-search-bar/uni-search-bar",
+    "uni-tag": "/components/uni-ui/uni-tag/uni-tag"
+  }
+}

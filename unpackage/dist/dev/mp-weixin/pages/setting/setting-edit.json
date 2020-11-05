@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "通用设置编辑",
+  "usingComponents": {
+    "uni-section": "/components/uni-ui/uni-section/uni-section"
+  }
+}

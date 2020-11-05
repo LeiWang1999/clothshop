@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-popup": "/components/uni-ui/uni-popup/uni-popup",
+    "uni-tag": "/components/uni-ui/uni-tag/uni-tag",
+    "zx-product-group": "/components/zx-diy/zx-product-group/zx-product-group",
+    "zx-page-list": "/components/zx-diy/zx-page-list/zx-page-list"
+  }
+}

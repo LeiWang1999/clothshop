@@ -1,0 +1,54 @@
+
+.example-body {
+
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	padding: 20rpx;
+}
+.tag-view {
+
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	margin: 10rpx 15rpx;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.v-uni-section {
+	margin-top: 0px;
+}
+.cont {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 15px;
+	padding-bottom: 10px;
+	position: relative;
+	background-color: #fff;
+	font-size: 15px;
+}
+.v-item{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+

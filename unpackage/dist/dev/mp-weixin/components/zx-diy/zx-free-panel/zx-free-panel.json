@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zx-page-list": "/components/zx-diy/zx-page-list/zx-page-list",
+    "uni-number-box": "/components/uni-ui/uni-number-box/uni-number-box",
+    "uni-popup": "/components/uni-ui/uni-popup/uni-popup",
+    "uni-tag": "/components/uni-ui/uni-tag/uni-tag",
+    "t-color-picker": "/components/zx-ui/zx-color-picker/zx-color-picker"
+  }
+}

@@ -1,0 +1,19 @@
+
+.cont {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 15px;
+	padding-bottom: 10px;
+	position: relative;
+	background-color: #fff;
+	font-size: 15px;
+}
+.v-item{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+

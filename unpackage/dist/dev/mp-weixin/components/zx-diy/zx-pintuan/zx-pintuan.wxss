@@ -1,0 +1,231 @@
+
+.v-root-item {
+		position: relative;
+		background-color: #FFFFFF;
+}
+.v-root-edit {
+		position: relative;
+		min-height: 10px;
+		border: 1px dashed #38f;
+}
+.v-action {
+		position: relative;
+		float: left;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+}
+.tag-view{
+
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		margin: 10rpx 10rpx;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+}
+.popup-content {
+
+		display: block;
+
+		background-color: #F4F5F6;
+		font-size: 14px;
+}
+.v-pro-info{
+/* 		padding-left: 5px;
+		padding-right: 5px; */
+}
+.t-pro-name{
+		font-size: 14px;
+	    line-height: 20px;
+	    max-height: 20px;
+	    margin-bottom: 5px;
+}
+.t-pro-detail{
+		font-size: 12px;
+		line-height: 16px;
+		color: #999;
+		height: 16px;
+}
+.t-pro-price{
+		color: #f44;
+		height: 16px;
+		line-height: 16px;
+		font-size: 16px;
+}
+.t-pre-price{
+		margin-left: 10px;
+		height: 20px;
+	    color: #c8c9cc;
+	    font-weight: 400;
+	    font-size: 12px;
+	    line-height: 24px;
+	    text-decoration: line-through;
+	    vertical-align: initial;
+}
+.scroll-view_H {
+		white-space: nowrap;
+		width: 100%;
+}
+.scroll-view-item_H {
+		display: inline-block;
+		margin-right: 20rpx;
+		font-size: 36rpx;
+		margin-bottom: 10px;
+}
+.scroll-Y {
+		height: 700rpx;
+}
+.v-right-txt{
+		padding-top: 9rpx;
+}
+.t-select-pro-icon-add{
+}
+.v-select-pro-icon {
+		border: 1px dashed #ddd;
+		background-color: #fff;
+		width: 100rpx;
+		line-height: 100rpx;
+		text-align: center;
+		color: #777;
+		font-size: 26rpx;
+}
+.uni-uploader__img{
+		position: absolute;
+}
+.uni-uploader__input-box{
+		width: 150rpx;
+		height: 150rpx;
+}
+.image-del{
+		position: absolute;
+		margin-top: 100rpx;
+		margin-left: 100rpx;
+		width: 50rpx;
+		height: 50rpx;
+}
+.image-left{
+		position: absolute;
+		margin-top: 100rpx;
+		width: 50rpx;
+		height: 50rpx;
+}
+.image-right{
+		position: absolute;
+		margin-top: 100rpx;
+		margin-left: 50rpx;
+		width: 50rpx;
+		height: 50rpx;
+}
+.uni-uploader__img{
+		position: absolute;
+}
+.v-img-bak{
+		position: absolute;
+		margin-top: 100rpx;
+		width: 150rpx;
+		height:50rpx;
+		background-color: #bfbfbf; 
+		opacity: 0.6;
+}
+.cell-pd {
+		padding: 22rpx 30rpx;
+}
+.list-pd {
+		margin-top: 50rpx;
+}
+.uni-uploader__file {
+		margin: 10rpx;
+		width: 150rpx;
+		height: 150rpx;
+}
+.uni-uploader__img {
+		display: block;
+		width: 150rpx;
+		height: 150rpx;
+}
+.v-text{
+		display: inline-block;
+		margin-left: 25rpx;
+}
+.i-image{
+		background-color: #EEEEEE;
+}
+.v-btn-buy{
+		width: 68px;
+		margin: 0 auto;
+}
+.v-btn-buy2{
+		width: 55px;
+		margin: 0 auto;
+}
+.v-one-line_data{
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+}
+.v-two-line_data{
+		text-overflow: -o-ellipsis-lastline;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		-webkit-box-orient: vertical;
+}
+.item-pintuan{
+		position: relative;
+		background: -webkit-linear-gradient(left,#ff6060,#f44);
+		background: linear-gradient(90deg,#ff6060,#f44);
+		height: 40px;
+		margin-top: -45px;
+		margin-bottom: 5px;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 12px;
+}
+.pt-title{
+		font-weight: 700;
+		font-size: 22px;
+		color: #fff;
+		margin-top: 5px;
+}
+.pt-countdown{
+	    display: block;
+	    height: 16px;
+	    margin: 5px 0 0;
+	    line-height: 16px;
+	    text-align: left;
+		font-size: 12px;
+		float: right;
+		color: #fff;
+}
+.cd-txt{
+		opacity: .6;
+}
+.cd-num{
+		padding: 0 2px;
+	    color: #fff;
+	    font-weight: 700;
+	    font-size: 12px;
+	    line-height: 16px;
+	    text-align: center;
+	    background: 0 0;
+}
+.cd-tip{
+		display: inline-block;
+	    margin: 0 2px;
+	    color: #fff;
+	    font-size: 12px;
+	    text-align: center;
+	    -webkit-transform: scale(.8);
+	            transform: scale(.8);
+		opacity: .6;
+}
+

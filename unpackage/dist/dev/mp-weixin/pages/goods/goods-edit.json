@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商品编辑",
+  "usingComponents": {
+    "uni-popup": "/components/uni-ui/uni-popup/uni-popup"
+  }
+}

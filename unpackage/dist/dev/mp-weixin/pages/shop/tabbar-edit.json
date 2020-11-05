@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "导航编辑",
+  "usingComponents": {
+    "zx-tabbar": "/components/zx-diy/zx-tabbar/zx-tabbar"
+  }
+}

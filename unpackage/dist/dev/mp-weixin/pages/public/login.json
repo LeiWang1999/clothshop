@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "登录",
+  "usingComponents": {
+    "zx-input": "/components/zx-ui/zx-login/zx-input",
+    "zx-button": "/components/zx-ui/zx-login/zx-button"
+  }
+}
