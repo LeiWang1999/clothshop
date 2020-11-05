@@ -529,7 +529,7 @@
 					detailImgList: this.detailImgList,
 					pintuanPrice:''
 				};
-				this.submitData = tempData;
+				this.submitData = tempData.productName;
 				this.add_product();
 			},
 			async add_product() {
@@ -540,12 +540,10 @@
 					updatetime:new Date().getTime()
 				}
 				let res = {}
-				console.log(data)
-				console.log(that.action)
-				console.log(myConst.ACTION.ADD)
 				if(that.action==myConst.ACTION.ADD){
-					console.log(data)
+					console.log("addData start")
 					res = await addData(data)
+					console.log("addData end")
 				}else{
 					res = await editDataByName(data)
 				}

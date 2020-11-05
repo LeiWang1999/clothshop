@@ -7,6 +7,7 @@ const myCloud = uniCloud.init({
 });
 module.exports = {
 	callFunction: (name, _data, callback, showLoading ,checkToken) => {
+		console.log("call function")
 		console.log(name)
 		console.log(_data)
 		let check = false

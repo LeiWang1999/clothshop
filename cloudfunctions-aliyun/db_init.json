@@ -1,4 +1,125 @@
 // 在本文件中可配置云数据库初始化，数据格式见：https://uniapp.dcloud.io/uniCloud/cf-database?id=db_init
 // 编写完毕后对本文件点右键，可按配置规则创建表和添加数据
 {
+	//添加默认首页
+	"page": {
+		"data": [
+			{
+				"_id":"001",
+				"comType": "index",
+				"diyData": [],
+				"pageTitle": "主页",
+				"pageShareDetail":"分享描述",
+				"backgroundColor":"#F9F9F9",
+				"template":0,
+				"updatetime": "15947811784176"					
+			},
+			{
+				"_id":"002",
+				"comType": "gwc",
+				"diyData": [],
+				"pageTitle": "购物车",
+				"updatetime": "15947811784176"					
+			},
+			{
+				"_id":"003",
+				"comType": "wd",
+				"diyData": [],
+				"pageTitle": "我的",
+				"updatetime": "15947811784176"				
+			},
+			{
+				"_id":"004",
+				"comType": "splb",
+				"diyData": [],
+				"pageTitle": "商品列表",
+				"updatetime": "15947811784176"				
+			}
+		]
+	},
+	"tabbar": {
+		"data": [
+			{
+				"data":[ 
+					{ 
+						"iconIndex": 0, 
+						"id": "31bc74ayhmu000", 
+						"name": "首页", 
+						"toUrl": {
+							"id":"001",
+							"pageTitle":"主页",
+							"comType": "index"
+						} 
+					}, { 
+						"iconIndex": 1, 
+						"id": "21u4chim2lxc00", 
+						"name": "购物车", 
+						"toUrl": {
+							"id":"002",
+							"pageTitle":"购物车",
+							"comType":"gwc"
+						} 
+					}, { 
+						"iconIndex": 2, 
+						"id": "4qcqk7wmd12000", 
+						"name": "我的", 
+						"toUrl": {
+							"id":"003",
+							"pageTitle":"我的",
+							"comType":"wd"
+						} 
+					} 
+				],
+				"updatetime": "15947811784176"	
+			}
+		]
+	},
+	"setting":{
+		"data": [
+			{
+				"data":{
+					"shopName":"zxshop",
+					"shopUrl" :"",
+					"pay":"微信支付",
+					"delivery":"快递发货",
+					"adminQrCodeUrl":""
+				},
+				"updatetime": "15947811784176"
+			}
+		]
+	},
+	//资源分组表
+	"source_group":{
+		"data": [
+			{
+				"name": "未分组",
+				"type": 1,
+				"updatetime": "15947811784176"
+			}
+		]
+	},
+	//管理员用户表
+	"admin":{
+		"data": [
+			{
+				"username": "admin",
+				"password": "123456",
+				"updatetime": "15947811784176"
+			}
+		]
+	},
+	//积分设置表
+	"point":{
+		"data": [
+			{
+				"data":{
+					"onePoint": "0",
+					"signInSend": "0",
+					"sevenDaySend": "0",
+					"toMoney": "关闭"
+				},
+				"updatetime": "15947811784176"
+			}
+		]
+	}
 }
