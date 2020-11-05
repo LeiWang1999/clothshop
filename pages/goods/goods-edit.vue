@@ -23,16 +23,6 @@
 					</view>
 				</view>
 			</view>
-			<view class="shipping" @tap="toSelectTemplate">
-				<text class="icon shipping-icon">&#xe60b;</text>
-				<text class="shipping-val">{{expressTitle}}</text>
-			</view>
-			
-			<view class="uni-flex uni-row item"  style="margin-top: 100rpx;" @tap="toSelectGroup">
-				<view class="text tip" style="width: 100rpx;text-align: center;">分组</view>
-				<view class="text" style="-webkit-flex: 1;flex: 1;"><input class="uni-input value" :value="groupTitle" placeholder="请选择分组" disabled /></view>
-				<view class="text tip" style="width: 50rpx;"><text class="uni-navigate-icon uni-icon" style="margin-top: 4px;font-size: 22px;color: #B2B2B2;">&#xe470;</text></view>
-			</view>
 			<view class="uni-flex uni-row item">
 				<view class="text tip" style="width: 100rpx;text-align: center;">价格</view>
 				<view class="text" style="-webkit-flex: 1;flex: 1;"><input class="uni-input value" v-model="price" placeholder="请输入价格" :disabled="skuDisabled" /></view>
@@ -85,8 +75,6 @@
 					<text class="detail-val">商品详情</text>
 				</view>
 			</view>
-			
-			
 		</view>
 		<view class="footer">
 			<view class="btn">
@@ -94,62 +82,6 @@
 				<button class="submit" type="default" @tap="onTapSave(1)">上架售卖</button>
 			</view>
 		</view>
-		
-		
-		<!-- 基本示例 -->
-		<uni-popup id="popup" ref="popup" type="bottom" :animation="false" @change="change">
-			<view class="popup-content">
-				<view class="popup-title">
-					<text>配送模板</text>
-				</view>
-				<view class="popup-nav">
-					<view v-for="(item,index) in templatePopupData" :key="index" @click="onSelectedTemplateType(index)">
-						<view class="line"></view>
-						<view class="item">
-							<view class="item-content">
-								<text class="item-title">{{item.title}}</text>
-							</view>
-							
-						</view>
-						<view class="selected" v-if="item.selected">
-							<text class="icon">&#xeaf1;</text>
-						</view>
-					</view>
-					<view class="line"></view>
-				</view>
-				<view class="popup-btn">
-					<button class="cancel" type="default" @tap="onPopupTemplateCancel">取消</button>
-					<button class="submit" type="default" @tap="onPopupTemplateSubmit">确定</button>
-				</view>
-			</view>
-		</uni-popup>
-		<!-- 基本示例 -->
-		<uni-popup id="popup" ref="popup2" type="bottom" :animation="false" @change="change">
-			<view class="popup-content">
-				<view class="popup-title">
-					<text>商品分组</text>
-				</view>
-				<view class="popup-nav">
-					<view v-for="(item,index) in groupPopupData" :key="index" @click="onSelectedGroupType(index)">
-						<view class="line"></view>
-						<view class="item">
-							<view class="item-content">
-								<text class="item-title">{{item.title}}</text>
-							</view>
-							
-						</view>
-						<view class="selected" v-if="item.selected">
-							<text class="icon">&#xeaf1;</text>
-						</view>
-					</view>
-					<view class="line"></view>
-				</view>
-				<view class="popup-btn">
-					<button class="cancel" type="default" @tap="onPopupGroupCancel">取消</button>
-					<button class="submit" type="default" @tap="onPopupGroupSubmit">确定</button>
-				</view>
-			</view>
-		</uni-popup>
 	</view>
 </template>
 
@@ -207,8 +139,6 @@
 				imageLeft:'/static/img/left.png',
 				groupPopupData:[],
 				templatePopupData:[],
-				express:'',  //运费模板ID
-				expressTitle:'请选择配送模板',
 				group:'',  //商品分组ID
 				groupTitle:'',
 				price:'', //商品价格
@@ -241,7 +171,6 @@
 				this.price = proData.skuRetailPrice;  //建议零售价格
 				this.stock = proData.skuStock;
 				this.imageList = proData.imageList;
-				this.express = proData.express;    //配送模板
 				this.showState = proData.showState;  //显示状态
 				this.group = proData.group;  //商品分组
 				this.sales = proData.sales;
@@ -251,18 +180,7 @@
 				if(this.skuArray.length>0){
 					this.showSku = true
 				}
-				if(this.group!=''){
-					const groupRes = await getGroupDataById({id:this.group})
-					if(groupRes.length>0){
-						this.groupTitle = groupRes[0].groName
-					}
-				}
-				if(this.express!=''){
-					const expressRes = await getTemplateDataById({id:this.express})
-					if(expressRes.length>0){
-						this.expressTitle = expressRes[0].temName
-					}
-				}
+				
 			},
 			async initData(){
 				const req = {
@@ -340,6 +258,7 @@
 								this.imageList[index]= res.tempFilePaths[0];
 							}else{
 								this.imageList = this.imageList.concat(res.tempFilePaths);								
+								// console.log(res.tempFilePaths)
 							}
 						}else if(type==2){
 							if(index!=undefined){
@@ -411,30 +330,6 @@
 					}
 				}
 				this.groupPopupData[index].selected = true
-			},
-			onPopupTemplateCancel(){
-				this.$refs.popup.close("bottom")
-			},
-			onPopupTemplateSubmit(){
-				for(let i=0;i<this.templatePopupData.length;i++){
-					if(this.templatePopupData[i].selected==true){
-						this.express = this.templatePopupData[i].id
-						this.expressTitle = this.templatePopupData[i].title
-					}
-				}
-				this.$refs.popup.close("bottom")
-			},
-			onPopupGroupCancel(){
-				this.$refs.popup2.close("bottom")
-			},
-			onPopupGroupSubmit(){
-				for(let i=0;i<this.groupPopupData.length;i++){
-					if(this.groupPopupData[i].selected==true){
-						this.group = this.groupPopupData[i].id
-						this.groupTitle = this.groupPopupData[i].title
-					}
-				}
-				this.$refs.popup2.close("bottom")
 			},
 			toSelectTemplate(){
 				this.$refs.popup.open()
@@ -512,6 +407,7 @@
 				this.submitData = {};
 				let tempImgList = [];
 				let filePath = this.imageList;
+				console.log(filePath)
 				if (this.productName.length < 1) {
 					uni.showToast({
 						title: '请填写商品名称',
@@ -536,13 +432,6 @@
 				if(this.stock==""||this.stock==null){
 					uni.showToast({
 							title: '请填写库存',
-							icon: 'none'
-						});
-						return false;
-				}
-				if(this.express==""||this.express==null){
-					uni.showToast({
-							title: '请选择配送模板',
 							icon: 'none'
 						});
 						return false;
@@ -582,7 +471,9 @@
 								if(this.detailImgList.length>0){
 									this.uploadDetailImg()
 								}else{
+									console.log("start to AddProduct")
 									this.toAddProduct();
+									console.log("Add Product finished")
 								}
 							}
 						})
@@ -631,7 +522,6 @@
 					skuRetailPrice: this.price,
 					skuStock:this.stock,
 					showState:this.showState,
-					express:this.express,
 					group:this.group,
 					sales:this.sales,
 					imageList: this.imageList,
@@ -650,7 +540,11 @@
 					updatetime:new Date().getTime()
 				}
 				let res = {}
+				console.log(data)
+				console.log(that.action)
+				console.log(myConst.ACTION.ADD)
 				if(that.action==myConst.ACTION.ADD){
+					console.log(data)
 					res = await addData(data)
 				}else{
 					res = await editDataByName(data)
