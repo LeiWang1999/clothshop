@@ -63,8 +63,6 @@
 					</view>
 				</view>
 			</view>
-			
-			
 			<view class="uni-flex uni-row item">
 				<view class="detail" style="margin-right: 30rpx;margin-top: 20rpx;" v-if="showSku==false" @tap="onTapAddSku">
 					<text class="icon detail-icon">&#xe621;</text>
@@ -183,29 +181,7 @@
 				
 			},
 			async initData(){
-				const req = {
-					page:1,
-					limit:100,
-					name:''
-				}
-				const data = await getGroupData(req)
-				for(let i=0;i<data.records.length;i++){
-					let d = {id:'',title:'',selected:false}
-					d.id = data.records[i]._id;
-					d.title = data.records[i].groName;
-					this.groupPopupData.push(d);
-				}
-				
-				const data2 = await getTemplateData(req)
-				for(let i=0;i<data2.records.length;i++){
-					let d = {id:'',title:'',selected:false}
-					d.id = data2.records[i]._id;
-					d.title = data2.records[i].temName;
-					this.templatePopupData.push(d)
-				}
-				if(this.action==myConst.ACTION.ADD){
-					//TODO 设置默认模板和分组值
-				}
+				return;
 			},
 			bindTitleAreaBlur: function (e) {
 				if(e.detail.value==""){
@@ -258,7 +234,6 @@
 								this.imageList[index]= res.tempFilePaths[0];
 							}else{
 								this.imageList = this.imageList.concat(res.tempFilePaths);								
-								// console.log(res.tempFilePaths)
 							}
 						}else if(type==2){
 							if(index!=undefined){
@@ -529,7 +504,7 @@
 					detailImgList: this.detailImgList,
 					pintuanPrice:''
 				};
-				this.submitData = tempData.productName;
+				this.submitData = tempData;
 				this.add_product();
 			},
 			async add_product() {
@@ -541,9 +516,7 @@
 				}
 				let res = {}
 				if(that.action==myConst.ACTION.ADD){
-					console.log("addData start")
 					res = await addData(data)
-					console.log("addData end")
 				}else{
 					res = await editDataByName(data)
 				}

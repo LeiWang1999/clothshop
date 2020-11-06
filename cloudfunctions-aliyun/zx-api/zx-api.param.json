@@ -1,0 +1,33 @@
+// 本文件中的json内容将在云函数【运行】时作为参数传给云函数。
+// 配置教程参考：https://uniapp.dcloud.net.cn/uniCloud/quickstart?id=runparam
+{
+	"url": "goods",
+	"action": "add",
+	"check": true,
+	"data": {
+		"id": "",
+		"proData": {
+			"productName": "12345123asd",
+			"productSellPoint": "",
+			"skuWeight": "",
+			"skuCostPrice": "",
+			"skuArray": [],
+			"skuDetailArray": [],
+			"skuRetailPrice": "123364",
+			"skuStock": "12",
+			"showState": "上架",
+			"group": "",
+			"imageList": [
+				"https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-gs6pqgoms8dl04deb7/447ca77b-3f17-4570-978f-0dcb8dc8fac8.",
+				"https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-gs6pqgoms8dl04deb7/20d2cd21-c5ef-438f-afa9-2f277c443bd7."
+			],
+			"detail": "",
+			"detailImgList": [
+				"https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-gs6pqgoms8dl04deb7/75e280bd-6c02-491e-9585-b3de5c30c174."
+			],
+			"pintuanPrice": ""
+		},
+		"updatetime": 1604640060968
+	},
+	"shopId": ""
+}
