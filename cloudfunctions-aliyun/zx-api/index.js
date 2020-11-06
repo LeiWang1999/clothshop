@@ -14,15 +14,23 @@ exports.main = async (event, context) => {
 			let res = await collection.add({
 				name: proData.productName,
 				goods_thumb: proData.imageList[0],
+				goods_banner_imgs: proData.imageList,
 				goods_price: proData.skuRetailPrice,
+				goods_desc: proData.detail,
+				goods_desc_imgs: proData.detailImgList,
 				remain_count: proData.skuStock,
 				is_on_sale: proData.showState=='上架'?true:false,
 			})
 			console.log('goods add')
+		}else if(action == 'query'){
+			let res = await collection.limit(6).get();
+			console.log('goods query');
+			return {
+				data:res
+			};
 		}
-	
 	}
 	
 	//返回数据给客户端
-	return event
+	// return event
 };

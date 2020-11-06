@@ -90,7 +90,6 @@
 	import myConst from '@/common/util/const.js'
 	import myUtil from '@/common/util/util.js'
 	import { getDataOne,editDataByName,addData,editData } from '@/common/api/goods.js'
-	import { getGroupData,getGroupDataById } from '@/common/api/goods-group.js'
 	import { getTemplateData,getTemplateDataById } from '@/common/api/shipping-template.js'
 	var sourceType = [
 		['camera'],
@@ -135,10 +134,7 @@
 				imageDel:'/static/img/del.png',
 				imageRight:'/static/img/right.png',
 				imageLeft:'/static/img/left.png',
-				groupPopupData:[],
 				templatePopupData:[],
-				group:'',  //商品分组ID
-				groupTitle:'',
 				price:'', //商品价格
 				stock:'',  //商品库存
 				detail:'', //商品详情
@@ -150,7 +146,6 @@
 				submitData:{},
 				showState:'下架',
 				showSku:false
-
 			}
 		},
 		methods: {
@@ -170,7 +165,6 @@
 				this.stock = proData.skuStock;
 				this.imageList = proData.imageList;
 				this.showState = proData.showState;  //显示状态
-				this.group = proData.group;  //商品分组
 				this.sales = proData.sales;
 				if(this.detail!=''||this.detailImgList.length>0){
 					this.showDetail = true
@@ -297,14 +291,6 @@
 					}
 				}
 				this.templatePopupData[index].selected = true
-			},
-			onSelectedGroupType(index){
-				for(let i=0;i<this.groupPopupData.length;i++){
-					if(this.groupPopupData[i].selected==true){
-						this.groupPopupData[i].selected = false
-					}
-				}
-				this.groupPopupData[index].selected = true
 			},
 			toSelectTemplate(){
 				this.$refs.popup.open()

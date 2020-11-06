@@ -148,33 +148,6 @@
 			}
 		},
 		{
-			"path": "pages/goods/goods-detail-edit",
-			"style": {
-				"navigationBarTitleText": "商品详情编辑",
-				"h5": {
-					"titleNView": "false"
-				}
-			}
-		},
-		{
-			"path": "pages/goods/goods-group-list",
-			"style": {
-				"navigationBarTitleText": "商品分组列表",
-				"h5": {
-					"titleNView": "false"
-				}
-			}
-		},
-		{
-			"path": "pages/goods/goods-group-edit",
-			"style": {
-				"navigationBarTitleText": "商品分组编辑",
-				"h5": {
-					"titleNView": "false"
-				}
-			}
-		},
-		{
 			"path": "pages/delivery/template-list",
 			"style": {
 				"navigationBarTitleText": "快递模板列表",

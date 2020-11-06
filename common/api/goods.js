@@ -1,6 +1,7 @@
 import request from '@/common/util/request'
 import myConst from '@/common/util/const'
 const url = myConst.URL.GOODS
+
 export const getData = (data) => {
 	return request({
 		url,

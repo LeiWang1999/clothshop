@@ -27,7 +27,6 @@
 	import uniFab from '@/components/uni-ui/uni-fab/uni-fab.vue'
 	import myCloud from '@/common/util/cloud.js';
 	import myConst from '@/common/util/const.js';
-	import { getData } from '@/common/api/goods-group.js'
 	export default {
 		components: {
 			uniIcons,

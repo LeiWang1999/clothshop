@@ -32,7 +32,6 @@ const URL = {
 	COUPON_USER: 'coupon-user',
 	COUPON: 'coupon',
 	GOODS: 'goods',
-	GOODS_GROUP: 'goods-group',
 	ORDER: 'order',
 	QRCODE: 'qrcode',
 	SELFGET: 'selfget',

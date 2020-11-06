@@ -78,6 +78,7 @@
 	import myConst from '@/common/util/const.js'
 	import myUtil from '@/common/util/util.js';
 	import { getData,delData,editData } from '@/common/api/goods.js'
+	
 	export default {
 		components: {
 			uniLoadMore,
@@ -120,7 +121,7 @@
 				}]
 			}
 			this.cateList.push(tmp);
-
+			this.loadProData(0, this.loadType, this.searchProName, this.field, this.order, this.state);
 			if (options.v != undefined && options.v == 1) {
 				this.pageType = 1
 			} else {
@@ -165,7 +166,6 @@
 					this.selectedArray.push(this.goodsList[e.currentTarget.dataset.index]);
 				}
 			},
-			//
 			async loadProData(offset, type, productName, field, order, state) {
 				const data = {
 						type: type,
@@ -177,6 +177,8 @@
 						updatetime: myUtil.timestamp()
 				}
 				const res = await getData(data)
+				console.log('get Data');
+				console.log(res)
 				if (res.length < 6) { //说明已经加载全部
 						this.loadingType = 'noMore';
 					} else {
@@ -259,7 +261,6 @@
 					url: 'goods-edit?id=' + id
 				});
 			},
-
 			//筛选点击
 			tabClick(index) {
 				if (this.filterIndex === index && index !== 2) {

@@ -55,10 +55,6 @@
 								name: '全部商品',
 								url: '/pages/goods/goods-list'
 							},
-							{
-								name: '商品分组',
-								url: '/pages/goods/goods-group-list'
-							}
 						]
 					}, {
 						id: 'form',

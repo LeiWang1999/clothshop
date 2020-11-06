@@ -18,8 +18,12 @@ export default function(obj) {
 			},
 			success(e) {
 				console.log(e)
-				const res = e.result
-				if (res.code == myConst.CODE.SUCCESS && e.success) {
+				console.log('log e')
+				console.log(e.success)
+				const res = e.result;
+				console.log('log res')
+				console.log(res)
+				if (e.success) {
 					resolve(res.data)
 				}
 				if (!e.success) {
