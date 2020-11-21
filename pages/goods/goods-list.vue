@@ -22,19 +22,17 @@
 				<text class="cate-item yticon icon-fenlei1" @click="toggleCateMask('show')"></text>
 			</view>
 		</view>
-
 		<view class="cart-list">
 			<block v-for="(item, index) in goodsList" :key="index">
 				<view class="cart-item" :class="{'b-b': index!==goodsList.length-1}">
 					<view class="image-wrapper">
-						<image :src="item.proData.imageList[0]" mode="aspectFill" lazy-load @click="toEditProData(item._id)"></image>
+						<image :src="item.goods_thumb[0]" mode="aspectFill" lazy-load @click="toEditProData(item._id)"></image>
 						<view class="yticon icon-xuanzhong2 checkbox" :class="{checked: item.checked}" :data-index="index" @click="proCheck"></view>
 					</view>
 					<view class="item-right" @click="toEditProData(item._id)">
-						<text class="clamp title">{{item.proData.productName}}</text>
-						<text class="attr">{{item.attr_val}}</text>
-						<text class="price">¥{{item.proData.skuRetailPrice}}</text>
-
+						<text class="clamp title">{{item.name}}</text>
+						<!-- <text class="attr">{{item.attr_val}}</text> -->
+						<text class="price">¥{{item.goods_price}}</text>
 					</view>
 					<text v-if="pageType==0" class="del-btn yticon icon-fork" @click="deleteProItem(index)"></text>
 				</view>
@@ -177,18 +175,8 @@
 						updatetime: myUtil.timestamp()
 				}
 				const res = await getData(data)
-				console.log('get Data');
-				console.log(res)
-				if (res.length < 6) { //说明已经加载全部
-						this.loadingType = 'noMore';
-					} else {
-						this.loadingType = 'more';
-					}
-					for (let item in res) {
-						res[item].checked = false;
-					}
-					this.goodsList.push.apply(this.goodsList, res);
-				
+				let res_data = res.data;
+				this.goodsList.push.apply(this.goodsList, res_data);	
 			},
 			deleteProItem(index) {
 				var that = this;
